@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box; 
+    
+    --cor-fundo: rgb(0, 191, 255);
+    --cor-nova: #57aeff;
+    --fonte-contact: 'Roboto', sans-serif;
+}
+
+body{
+    padding-top: 170px;
+    background:whitesmoke ;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    font-family: var(--fonte-contact)
+}
+
+.main-center{
+    padding-top: 15px;
+    background-color: rgb(236, 236, 236);
+    box-shadow: -3px 5px 8px rgba(0, 0, 0, 0.192);
+    width: 900px;
+    border-radius: 15px;
+}
+
+.contatos-titulo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 25px;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.contatos > div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    margin-left: 80px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.usimetalEmail, .usimetalNumero{
+    font-weight: 600;
+}
+
+.contatos-rapidos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    gap: 30px;
+}
+
+.icon{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.img-rapido{
+    width: 110px;
+    transition: 0.1s;
+}
+
+/* Ações */
+.img-rapido:hover{
+    width: 90px;
+}
+
+/* Responsividade */
+@media (max-width:911px){
+
+    .main-center{
+        width: 550px;
+    }
+
+    .contatos-rapidos{
+        height: 300px;
+    }
+
+    .contatos-rapidos{
+        flex-direction: column;
+
+    }
+}
+
+@media (max-width:580px){
+
+    .main-center{
+        width: 370px;
+    }
+
+    i.titulo{
+        font-size: 30px;
+    }
+
+    .contatos-titulo > h1{
+        font-size: 20px;
+    }
+
+    .img-rapido{
+        width: 90px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .contatos-rapidos{
+        height: 250px;
+    }
+
+}
